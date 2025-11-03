@@ -81,6 +81,7 @@ body, html {
 }
 section h2 {
   margin-bottom: 30px; /* space between the title and the content below */
+  color: #ffd21d;
 }
 
 /* hide sections by default, show only active */
@@ -97,6 +98,7 @@ section.active {
 #home h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  color: #ffc800;
 }
 #home p {
   font-size: 1.2rem;
