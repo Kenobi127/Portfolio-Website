@@ -3,13 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body, html {
   height: 100%;
-  background: #f4f4f4;
-  color: #333;
+  background: #012b41;
+  color: #e2e1e1;
 }
 
 /* ---------- Layout ---------- */
@@ -22,8 +22,8 @@ body, html {
 /* ---------- Sidebar ---------- */
 .sidebar {
   width: 200px;
-  background: #1e1e2f;
-  color: #fff;
+  background: #121A26;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   padding: 2rem 0;
@@ -46,7 +46,8 @@ body, html {
 /* highlight on hover or active */
 .sidebar li:hover,
 .sidebar li.active {
-  background: #4b4b7f;
+  background: #fac126;
+  color: #3b3a3a;
   font-weight: bold;
 }
 
@@ -68,7 +69,7 @@ body, html {
 }
 
 .sidebar-footer a:hover {
-  color: #ccc;             
+  color: #fac126;             
 }
 
 /* ---------- Main content ---------- */
@@ -107,7 +108,7 @@ section.active {
 
 .project-card {
   display: block;        /* makes <a> behave like a block */
-  background: #fff;
+  background: #b4b4b4;
   padding: 20px;
   border-radius: 10px;
   width: 300px;
@@ -157,7 +158,7 @@ footer {
   border-top: 1px solid #ccc;
   font-size: 0.9rem;
   text-align: center;
-  color: #777;
+  color: #aaaaaa;
 }
 
 /* ---------- Responsive / Mobile ---------- */
