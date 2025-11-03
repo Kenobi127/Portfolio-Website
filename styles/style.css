@@ -26,10 +26,11 @@ body, html {
   color: #fff;
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
+  padding: 2rem 0;
   position: fixed;
   top: 0;
   bottom: 0;
+  justify-content: space-between;
 }
 
 .sidebar ul {
@@ -49,9 +50,30 @@ body, html {
   font-weight: bold;
 }
 
+/* Footer inside sidebar */
+.sidebar-footer {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;              
+  padding: 0 20px;        
+  margin-bottom: 20px;    
+}
+
+/* Links styling */
+.sidebar-footer a {
+  color: white;            
+  text-decoration: none;   
+  font-weight: bold;       
+  transition: color 0.2s; 
+}
+
+.sidebar-footer a:hover {
+  color: #ccc;             
+}
+
 /* ---------- Main content ---------- */
 .content {
-  margin-left: 200px;  /* leave space for sidebar */
+  margin-left: 200px; 
   flex: 1;
   padding: 40px;
   transition: all 0.3s;
