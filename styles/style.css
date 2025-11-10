@@ -1,4 +1,4 @@
-/* ---------- Reset / Global ---------- */
+/*reset all elements and set font*/
 * {
   margin: 0;
   padding: 0;
@@ -12,14 +12,14 @@ body, html {
   color: #e2e1e1;
 }
 
-/* ---------- Layout ---------- */
+/*layout: sidebar + main content*/
 .container {
-  display: flex;       /* sidebar + main content */
+  display: flex;
   min-height: 100vh;
-  flex-direction: column; /* stack content + footer vertically */
+  flex-direction: column;
 }
 
-/* ---------- Sidebar ---------- */
+/*sidebar style*/
 .sidebar {
   width: 200px;
   background: #121A26;
@@ -43,7 +43,7 @@ body, html {
   transition: background 0.2s;
 }
 
-/* highlight on hover or active */
+/*highlight active or hover menu items*/
 .sidebar li:hover,
 .sidebar li.active {
   background: #fac126;
@@ -51,7 +51,7 @@ body, html {
   font-weight: bold;
 }
 
-/* Footer inside sidebar */
+/*bottom social links in sidebar*/
 .sidebar-footer {
   display: flex;
   flex-direction: column; 
@@ -60,7 +60,7 @@ body, html {
   margin-bottom: 20px;    
 }
 
-/* Links styling */
+/*links style in sidebar footer*/
 .sidebar-footer a {
   color: white;            
   text-decoration: none;   
@@ -72,29 +72,33 @@ body, html {
   color: #fac126;             
 }
 
-/* ---------- Main content ---------- */
+/*main content area*/
 .content {
   margin-left: 200px; 
   flex: 1;
   padding: 40px;
   transition: all 0.3s;
 }
+
+/*spacing under section titles*/
 section h2 {
-  margin-bottom: 30px; /* space between the title and the content below */
+  margin-bottom: 30px;
   color: #ffd21d;
 }
 
-/* hide sections by default, show only active */
+/*hide all sections by default*/
 section {
   display: none;
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+/*show only active section*/
 section.active {
   display: block;
 }
 
-/* ---------- Home ---------- */
+/*home section style*/
 #home h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
@@ -106,14 +110,15 @@ section.active {
   line-height: 1.4;
 }
 
-/* ---------- Projects ---------- */
+/*project cards container*/
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px; /* space between cards */
+  gap: 40px; 
   justify-content: flex-start;
 }
 
+/*individual project cards*/
 .project-card {
   width: 350px;      
   height: 350px;     
@@ -128,18 +133,20 @@ section.active {
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
+/*hover effect for cards*/
 .project-card:hover {
   transform: translateY(-7px);
   box-shadow: 0 6px 12px #000000;
 }
 
+/*overlay title at bottom of card*/
 .project-title {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 10px;
-  background: #00000099; /* semi-transparent black */
+  background: #00000099;
   text-align: center;
   font-weight: bold;
   font-size: 1rem;
@@ -155,13 +162,13 @@ section.active {
   line-height: 1.4;
 }
 
-/* ---------- About ---------- */
+/*about section text*/
 #about p {
   font-size: 1rem;
   line-height: 1.6;
 }
 
-/* ---------- Contact ---------- */
+/*contact links*/
 #contact a {
   color: #1e1e2f;
   text-decoration: underline;
@@ -171,7 +178,7 @@ section.active {
   margin-bottom: 10px;
 }
 
-/* ---------- Footer ---------- */
+/*page footer*/
 footer {
   margin-top: 40px;
   margin-bottom: 20px;
@@ -182,10 +189,10 @@ footer {
   color: #aaaaaa;
 }
 
-/* ---------- Responsive / Mobile ---------- */
+/*responsive for mobile*/
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;  /* stack sidebar and content */
+    flex-direction: column; 
   }
 
   .sidebar {
@@ -205,6 +212,6 @@ footer {
   }
 
   .project-card {
-    width: 90%; /* cards full width on mobile */
+    width: 90%;
   }
 }
